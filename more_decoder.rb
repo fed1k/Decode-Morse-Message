@@ -11,10 +11,14 @@ def decode_char(char)
 end
 
 def decode_word(char)
-  new_array = char.chars('')
+  new_array = char.split
   empty_string = ''
   new_array.each do |i|
     empty_string += decode_char(i)
   end
   empty_string
 end
+
+print decode_word('-- -.--  -. .- -- .')
+
+print decode_word('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')

@@ -28,6 +28,7 @@ def decode(char)
   new_string
 end
 
+# print decode_char(".-")
 # print decode_word('-- -.--')
 # print decode('-- -.--  -. .- -- .')
 print decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')

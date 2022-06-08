@@ -19,6 +19,15 @@ def decode_word(char)
   empty_string
 end
 
-print decode_word('-- -.--  -. .- -- .')
+def decode(char)
+  new_array = char.split('  ')
+  new_string = ''
+  new_array.each do |i|
+    new_string << "#{decode_word(i)} "
+  end
+  new_string
+end
 
-print decode_word('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+# print decode_word('-- -.--')
+# print decode('-- -.--  -. .- -- .')
+print decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')

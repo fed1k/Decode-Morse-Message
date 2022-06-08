@@ -7,7 +7,7 @@ def decode_char(char)
     '..-' => 'u', '...-' => 'v', '.--' => 'w', '-..-' => 'x', '-.--' => 'y',
     '--..' => 'z'
   }
-  morse_code[char]
+  morse_code[char].upcase
 end
 
 def decode_word(char)
